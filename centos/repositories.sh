@@ -6,4 +6,7 @@ sudo wget http://public-repo-1.hortonworks.com/ambari/centos6/1.x/updates/1.7.0/
 
 echo "Installing Spring"
 
-sudo wget -O - http://packages.gopivotal.com/pub/rpm/rhel16/app-suite/app-suite-installer | sh
+sudo su
+
+wget -q -O - http://packages.gopivotal.com/pub/rpm/rhel6/app-suite/app-suite-installer |sh
+
