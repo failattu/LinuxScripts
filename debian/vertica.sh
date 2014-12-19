@@ -1,6 +1,6 @@
 #/bin/bash
 sudo su
-sudo sed -i 's/^exit 0 /#exit 0/' /etc/rc.local
+sudo sed -i 's/^exit 0/#exit 0/' /etc/rc.local
 sudo /sbin/blockdev --setra 2048 /dev/sda
 sudo echo '/sbin/blockdev --setra 2048 /dev/sda' >> /etc/rc.local
 #sudo sed -i 's/^SELINUX=enabled/SELINUX=disabled/' /selinux/config
